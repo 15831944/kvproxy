@@ -29,7 +29,6 @@
 #include "kvproxy/utils.h"
 #include "thirdparty/glog/logging.h"
 
-namespace common {
 namespace kvproxy {
 
 KvProxyManager::KvProxyManager() {
@@ -144,4 +143,3 @@ ExtKvProxy* KvProxyManager::GetExtKvProxy(const std::string & name) {
 }
 
 }  // namespace kvproxy
-}  // namespace common

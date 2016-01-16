@@ -26,7 +26,6 @@
 #include "kvproxy/normal-error.h"
 #include "kvproxy/utils.h"
 
-namespace common {
 namespace kvproxy {
 
 using std::ios;
@@ -138,4 +137,3 @@ void FileKvProxy::Sync() {
 }
 
 }  // namespace kvproxy
-}  // namespace common

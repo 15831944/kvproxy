@@ -31,7 +31,6 @@
 #include "common/utility/utility.h"
 #include "thirdparty/glog/logging.h"
 
-namespace common {
 namespace kvproxy {
 
 struct FileLockGuard {
@@ -49,7 +48,7 @@ private:
 RawMMapFile::Entry *RawMMapFile::Find(const void *key, uint32_t key_size) {
   BOOST_ASSERT(key != NULL && key_size > 0);
 
-  uint32_t key_buff_size = AlignOf(key_size, sizeof(uint64_t));
+  uint32_t key_buff_size = common::AlignOf(key_size, sizeof(uint64_t));
   void *key_buff = calloc(1, key_buff_size);
   memcpy(key_buff, key, key_size);
   Entry * cur = Next(NULL);
@@ -86,8 +85,8 @@ RawMMapFile::Entry *RawMMapFile::AddEntry(const void *key,
   while (cur->key_size != 0) {  // move to end
     cur = Next(cur);
   }
-  cur->key_size = AlignOf(key_size, sizeof(uint64_t));
-  cur->value_size = AlignOf(value_size, sizeof(uint64_t));
+  cur->key_size = common::AlignOf(key_size, sizeof(uint64_t));
+  cur->value_size = common::AlignOf(value_size, sizeof(uint64_t));
   cur->total_size = cur->key_size  + cur->value_size + sizeof(Entry);
   memcpy(cur->Key(), key, key_size);
   memcpy(cur->Value(), value, value_size);
@@ -124,4 +123,3 @@ RawMMapFile::~RawMMapFile() {
 }
 
 }  // namespace kvproxy
-}  // namespace common

@@ -46,7 +46,6 @@
       return rc;\
     } while (0)
 
-namespace common {
 namespace kvproxy {
 
 KvProxyStatusDecorator::KvProxyStatusDecorator(KvProxy *kvproxy,
@@ -123,4 +122,3 @@ const char * KvProxyStatusDecorator::GetError(int err_code) {
 }
 
 }  // namespace kvproxy
-}  // namespace common

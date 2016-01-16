@@ -25,7 +25,6 @@
 #ifndef KVPROXY_NORMAL_ERROR_H_
 #define KVPROXY_NORMAL_ERROR_H_
 
-namespace common {
 namespace kvproxy {
 
 // 通用错误定义
@@ -52,6 +51,5 @@ class NormalError {
 };
 
 }  // namespace kvproxy 
-}  // namespace common 
 
 #endif  // KVPROXY_NORMAL_ERROR_H_

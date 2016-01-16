@@ -25,8 +25,8 @@
 
 using std::string;
 using std::map;
-using common::KvProxy;
-using common::KvProxyManager;
+using kvproxy::KvProxy;
+using kvproxy::KvProxyManager;
 
 static void SimpleDataExample(const string &type_name, const string &key) {
   std::string kv_proxy_name = "example";

@@ -25,9 +25,9 @@
 
 using std::string;
 using std::map;
-using common::KvProxy;
-using common::MockKvProxy;
-using common::KvProxyManager;
+using kvproxy::KvProxy;
+using kvproxy::MockKvProxy;
+using kvproxy::KvProxyManager;
 
 void SetMockData(MockKvProxy* kv_proxy, const string& key, const string& value) {
   kv_proxy->Put(key, value);

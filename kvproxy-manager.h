@@ -29,7 +29,7 @@
 
 namespace kvproxy {
 
-class KvProxyManager: public Singleton<KvProxyManager> {
+class KvProxyManager: public common::Singleton<KvProxyManager> {
  public:
   KvProxyManager();
   ~KvProxyManager();
@@ -57,6 +57,6 @@ class KvProxyManager: public Singleton<KvProxyManager> {
   std::map<std::string, KvProxy *> proxy_map_;
 };
 
-}  // namespace common
+}  // namespace kvproxy
 
 #endif  // KVPROXY_KVPROXY_MANAGER_H_

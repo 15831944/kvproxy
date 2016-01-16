@@ -18,7 +18,6 @@
 //
 #include "kvproxy/normal-error.h"
 
-namespace common {
 namespace kvproxy {
 
 const char * NormalError::GetNormalError(int err_code) {
@@ -39,4 +38,3 @@ const char * NormalError::GetNormalError(int err_code) {
 }
 
 }  // namespace kvproxy
-}  // namespace common

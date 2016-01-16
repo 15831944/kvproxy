@@ -20,7 +20,6 @@
 #include "kvproxy/file-kvproxy.h"
 #include "kvproxy/mock-kvproxy.h"
 
-namespace common {
 namespace kvproxy {
 
 void RegisterAllBuiltinKvProxyTypes() {
@@ -29,4 +28,3 @@ void RegisterAllBuiltinKvProxyTypes() {
 }
 
 }  // namespace kvproxy
-}  // namespace common

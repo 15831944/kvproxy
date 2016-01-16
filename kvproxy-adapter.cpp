@@ -22,7 +22,6 @@
 #include <vector>
 #include "kvproxy/normal-error.h"
 
-namespace common {
 namespace kvproxy {
 
 int KvProxyAdapter::MGet(const std::vector<std::string> &key_vec,
@@ -93,4 +92,3 @@ int KvProxyAdapter::AddCount(const std::string &key, int64_t count, int64_t *ret
 }
 
 }  // namespace kvproxy
-}  // namespace common

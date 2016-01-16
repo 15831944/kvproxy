@@ -25,7 +25,6 @@
 #include <map>
 #include <string>
 
-namespace common {
 namespace kvproxy {
 
 class RawMMapFile {
@@ -82,6 +81,5 @@ class PODMMapFile : public RawMMapFile{
 };
 
 }  // namespace kvproxy
-}  // namespace common
 
 #endif  // KVPROXY_POD_MMAP_FILE_H_

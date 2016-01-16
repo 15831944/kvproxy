@@ -1,2 +1,0 @@
-# kvproxy
-key value proxy

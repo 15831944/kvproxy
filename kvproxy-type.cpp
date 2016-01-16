@@ -20,7 +20,6 @@
 #include <string>
 #include "thirdparty/glog/logging.h"
 
-namespace common {
 namespace kvproxy {
 
 KvProxyType::~KvProxyType() {
@@ -63,4 +62,3 @@ KvProxyType * KvProxyTypeManager::Find(
 }
 
 }  // namespace kvproxy
-}  // namespace common
